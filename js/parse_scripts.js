@@ -331,7 +331,7 @@ function parseOSM(data)
 				tagLightHeight = EleValue;
 			} else if (EleKey == "light:method" || EleKey == "lamp_type") {
 				tagLightMethod = EleValue;
-			} else if (EleKey == "light:mount" || EleKey == "lamp_mount" || EleKey == "support") {
+			} else if (EleKey == "light:mount" || EleKey == "lamp_mount" || (EleKey == "support" && !tagLampMount)) {
 				tagLampMount = EleValue;
 			} else if (EleKey == "light:lit") {
 				tagLightLit = EleValue;
