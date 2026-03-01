@@ -744,6 +744,8 @@ function getLightMount(value) {
 		result =  i18next.t("lamp_mount_straight_mast");
 	} else if (value == "bent mast" || value == "bent_mast") {
 		result =  i18next.t("lamp_mount_bent_mast");
+	} else if (value == "angled mast" || value == "angled_mast") {
+		result =  i18next.t("lamp_mount_angled_mast");
 	} else if (value == "cast steel mast" || value == "cast_steel_mast") {
 		result =  i18next.t("lamp_mount_cast_steel_mast");
 	} else if (value == "mast" || value == "pole") {
