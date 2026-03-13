@@ -11,3 +11,7 @@ const MIN_ZOOM_LOW_ZOOM = 11;
 // set default opacity levels;
 const OPACITY_NO_DATA = 1.0;
 const OPACITY_HAS_DATA = 0.2;
+
+// set overpass api servers
+const OVERPASS_API_URL = "overpass-api.de/api/interpreter?data=";
+const OVERPASS_API_ATTR = 'Data via <a href="https://www.overpass-api.de/">Overpass API</a>';

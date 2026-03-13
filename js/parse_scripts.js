@@ -174,7 +174,7 @@ function loadData(bbox) {
 		RequestProtocol = "http://";
 	}
 
-	RequestURL = RequestProtocol + "overpass-api.de/api/interpreter?data=" + XMLRequestText;
+	RequestURL = RequestProtocol + OVERPASS_API_URL + XMLRequestText;
 	
 	//AJAX REQUEST
 	$.ajax({
@@ -235,7 +235,7 @@ function loadDataLowZoom(bbox)
 	}
 
 	XMLRequestTextLowZoom = bbox + '( node["highway"="street_lamp"]; node["light_source"];); out skel;'
-	RequestURLlowZoom = RequestProtocol + "overpass-api.de/api/interpreter?data=" + XMLRequestTextLowZoom;
+	RequestURLlowZoom = RequestProtocol + OVERPASS_API_URL + XMLRequestTextLowZoom;
 	
 	//AJAX REQUEST
 	$.ajax({
