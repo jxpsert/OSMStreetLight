@@ -63,9 +63,10 @@
 	"load_lowzoom_data" : "Load low zoom overview (1x)",
 	"update_lowzoom_data" : "Update low zoom overview (1x)",
 	"clear_lowzoom_data" : "(Clear)",
-	"ajaxerror_timeout" : "Timeout while loading data.",
-	"ajaxerror_error" : "Error while loading data.",
-	"ajaxerror_abort" : "Loading data aborted.",
+	"ajaxerror_timeout" : "Timeout while loading data from Overpass API.",
+	"ajaxerror_error" : "Error while loading data from Overpass API.",
+	"ajaxerror_abort" : "Loading data from Overpass API aborted.",
 	"ajaxerror_parseerror" : "Data parsing failed.",
-	"ajaxerror_unknown" : "Unknown error."
+	"ajaxerror_toomanyrequests" : "Too many requests when loading data from Overpass API. Try again in a few seconds.",
+	"ajaxerror_unknown" : "Unknown error while loading data from Overpass API."
 }

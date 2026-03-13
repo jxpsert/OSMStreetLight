@@ -67,5 +67,6 @@
 	"ajaxerror_error" : "Ошибка при загрузке данных.",
 	"ajaxerror_abort" : "Загрузка данных отменена.",
 	"ajaxerror_parseerror" : "Нельзя разобрать полученные данные.",
+	"ajaxerror_toomanyrequests" : "Too many requests when loading data from Overpass API. Try again in a few seconds.",
 	"ajaxerror_unknown" : "Неясная ошибка."
 }

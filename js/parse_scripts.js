@@ -193,10 +193,18 @@ function loadData(bbox) {
 		error: function(jqXHR, textStatus, errorThrown){
 			
 			if( i18next.isInitialized) {
-				if (textStatus == "timeout" || textStatus == "error" || textStatus == "abort" || textStatus == "parseerror") {
+				if (textStatus == "timeout" || textStatus == "abort" || textStatus == "parseerror") {
 					textStatus_value = i18next.t("ajaxerror_" + textStatus);
 				} else {
-					textStatus_value = i18next.t("ajaxerror_unknown");
+					//console.log("Error Thrown: " + errorThrown);
+					//console.log("textStatus: " + textStatus);
+					if (errorThrown == "Gateway Timeout") {
+						textStatus_value = i18next.t("ajaxerror_timeout");	
+					} else if (errorThrown == "Too Many Requests") {
+						textStatus_value = i18next.t("ajaxerror_toomanyrequests");
+					} else {
+						textStatus_value = i18next.t("ajaxerror_error");
+					}
 				}
 			} else { // fallback in case i18next is not initalized yet.
 				textStatus_value = "Error while loading data";

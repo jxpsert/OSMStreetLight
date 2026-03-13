@@ -66,5 +66,6 @@
 	"ajaxerror_error" : "データ読み込み中にエラーになりました。",
 	"ajaxerror_abort" : "データ読み込みが中断されました。",
 	"ajaxerror_parseerror" : "データ解析が失敗しました。",
+	"ajaxerror_toomanyrequests" : "Too many requests when loading data from Overpass API. Try again in a few seconds.",
 	"ajaxerror_unknown" : "未知のエラー。"
 }

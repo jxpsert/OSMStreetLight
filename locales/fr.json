@@ -66,5 +66,6 @@
 	"ajaxerror_error" : "Erreur lors du chargement des données.",
 	"ajaxerror_abort" : "Échec du chargement des données.",
 	"ajaxerror_parseerror" : "Échec de l'analyse des données.",
+	"ajaxerror_toomanyrequests" : "Too many requests when loading data from Overpass API. Try again in a few seconds.",
 	"ajaxerror_unknown" : "Erreur inconnue."
 }
