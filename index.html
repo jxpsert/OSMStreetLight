@@ -116,7 +116,9 @@
 				referrerPolicy: 'strict-origin-when-cross-origin'
 			});
 
-			var map = new L.Map('map');
+			var map = new L.Map('map', {
+				worldCopyJump: true
+				});
 
 			var baseMaps = {
 				"OpenStreetMap Carto": OSM_carto,
